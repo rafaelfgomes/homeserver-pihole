@@ -5,8 +5,8 @@ services:
     container_name: pihole
     image: pihole/pihole:latest
     ports:
-      - "53:53/tcp"
-      - "53:53/udp"
+      - "58:53/tcp"
+      - "58:53/udp"
       - "${WEB_PORT}:80/tcp"
     environment:
       TZ: ${TIMEZONE}
